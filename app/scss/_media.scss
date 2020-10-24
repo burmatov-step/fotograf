@@ -1,0 +1,277 @@
+@media (max-width: 1200px) {
+    .main{
+        background-position: center;
+    }
+}
+
+
+
+@media (max-width: 800px){
+    .tel__menu-mobile{
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        a{
+            color: #000;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+.menu-list {
+    // display: none;
+    position: absolute;
+    display: flex;
+    transform: translateY(-500px);
+    flex-direction: column;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: all .3s;
+    bottom: 0;
+
+    // justify-content: space-around;
+    background-color: rgba(#fff, .5);
+     &--active {
+         transform: translateY(60px);
+        height: max-content;
+     }
+    li{
+        margin-left: 0px;
+
+        display: block;
+        // text-align: center;
+        // background-color: rgba(#fff, .5);
+        border-bottom: 1px solid #000;
+        a{
+            width: 100%;
+            line-height: 50px;
+            padding-left: 20px;
+        }
+    }
+}
+
+.header-tel{
+    display: none;
+}
+.menu__btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+
+}
+
+.menu__btn::before,
+.menu__btn::after {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin-bottom: 4px;
+    transition: transform .3s;
+
+}
+
+.menu__btn::after {
+    margin-bottom: 0;
+    width: 16px;
+    margin-left: auto;
+}
+
+.menu__btn-line {
+    background-color: #000;
+    width: 24px;
+    display: block;
+    height: 2px;
+    margin-bottom: 4px;
+    opacity: 1;
+    transition: opacity .6s;
+
+
+}
+
+.menu__btn.menu__btn--active {
+    .menu__btn-line {
+        opacity: 0;
+        transition: opacity 0s;
+
+    }
+
+    &::after {
+        width: 24px;
+        transform: translateY(-6px) rotate(-135deg);
+    }
+
+    &::before {
+        width: 24px;
+        transform: translateY(6px) rotate(135deg);
+    }
+
+
+
+}
+
+.main{
+    padding-bottom: 120px;
+}
+
+.main__content{
+margin: 0 auto;
+}
+
+
+
+}
+
+@media (max-width: 768px) {
+.porfolio__title{
+    font-weight: 500;
+}
+}
+
+@media (max-width: 620px) {
+.porfolio__text{
+margin-top: 20px;
+font-size: 20px;
+&::before{
+    width: 20px;
+    height: 20px;
+}
+}
+
+
+}
+
+
+@media (max-width: 700px) {
+    .cooperation__box{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .cooperation__item{
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .cooperation{
+        padding-bottom: 35px;
+    }
+
+    .cooperation__item+.cooperation__item {
+
+        padding-left: 0;
+        padding-top: 12px;
+            &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 75px;
+            height: 3px;
+            background-color: #464646;
+            }
+    }
+
+    .cooperation__item-title{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media (max-width: 669px){
+.slick-dots{
+    right: -40px;
+}
+}
+
+@media (max-width: 630px) {
+   .forms .box-form {
+       padding: 0px 10px;
+        left: 0;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 590px){
+.porfolio__title{
+    font-size: 38px;
+}
+}
+
+@media (max-width: 540px) {
+.porfolio__text{
+    font-size: 18px;
+    &::before {
+        width: 20px;
+        height: 18px;
+    }
+}
+}
+
+@media (max-width: 520px) {
+    .porfolio__title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px){
+.main__content-title{
+    font-size: 42px;
+}
+
+.main__content-text{
+    font-size: 20px;
+}
+
+.main__content-button a{
+    padding: 18px 50px;
+}
+
+.main__content-button {
+    margin-top: 60px;
+}
+}
+
+
+@media (max-width: 490px) {
+.porfolio__text {
+    font-size: 16px;
+
+}
+}
+
+@media (max-width: 490px)  {
+    .porfolio__text{
+       font-size: 15px;
+    }
+
+}
+
+@media (max-width: 370px) {
+    .forms__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 335px) {
+.cooperation__item-title {
+    font-size: 28px;
+}
+}
+
+@media (max-height: 345px) {
+    .header-tel {
+        padding-top: 0px;
+    }
+}
